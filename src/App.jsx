@@ -4,15 +4,17 @@ import "./app.scss";
 const App = () => {
   return (
     <div>
-      <section>
+      <section id="Home">
         <Navbar />
       </section>
-      <section>parallax</section>
+      <section id="Services">parallax</section>
+      <section>Services</section>
+      <section id="Projects">parallax</section>
       <section>project1</section>
       <section>project2</section>
       <section>project3</section>
       <section>project4</section>
-      <section>Contact</section>
+      <section id="Contact">Contact</section>
     </div>
   );
 };
