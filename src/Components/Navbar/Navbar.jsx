@@ -2,6 +2,7 @@ import "./navbar.scss";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Sidebar from "../Sidebar/Sidebar";
+import Links from "../Sidebar/Links/Links";
 
 const Navbar = () => {
   return (
@@ -16,16 +17,21 @@ const Navbar = () => {
         >
           Masum
         </motion.span>
-        <div className="social">
-          <a href="">
-            <FaFacebook />
-          </a>
-          <a href="">
-            <FaLinkedin />
-          </a>
-          <a href="">
-            <FaGithub />
-          </a>
+        <div className="navigation">
+          <div className="navItems">
+            <Links />
+          </div>
+          <div className="social">
+            <a href="">
+              <FaFacebook />
+            </a>
+            <a href="">
+              <FaLinkedin />
+            </a>
+            <a href="">
+              <FaGithub />
+            </a>
+          </div>
         </div>
       </div>
     </div>
