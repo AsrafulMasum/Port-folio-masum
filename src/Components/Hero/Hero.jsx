@@ -24,6 +24,7 @@ const textVariants = {
     },
   },
 };
+
 const sliderVariants = {
   initial: {
     x: 0,
@@ -46,7 +47,7 @@ const Hero = () => {
           className="textContainer"
           variants={textVariants}
           initial="initial"
-          animate="animate"
+          whileInView="animate"
         >
           <motion.h2 variants={textVariants}>MOHAMMAD ASRAFUL ISLAM MASUM</motion.h2>
           <motion.h1 variants={textVariants}>
