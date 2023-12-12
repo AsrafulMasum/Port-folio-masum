@@ -23,13 +23,13 @@ const Navbar = () => {
               <Links />
             </div>
             <div className="social">
-              <a href="">
+              <a target="_blank" rel="noreferrer" href="https://www.facebook.com/asrafulislam.masum.3">
                 <FaFacebook />
               </a>
-              <a href="">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hossain-mohammad-asraful-islam-masum-4b5847200">
                 <FaLinkedin />
               </a>
-              <a href="">
+              <a target="_blank" rel="noreferrer" href="https://github.com/AsrafulMasum">
                 <FaGithub />
               </a>
             </div>

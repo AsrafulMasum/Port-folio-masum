@@ -21,7 +21,7 @@ const Footer = () => {
 
           <div className="flex -mx-2">
             <a
-              href=""
+              target="_blank" rel="noreferrer" href="https://www.facebook.com/asrafulislam.masum.3"
               className="mx-2 text-gray-300 transition-colors duration-300 hover:text-blue-500"
               aria-label="Reddit"
             >
@@ -29,7 +29,7 @@ const Footer = () => {
             </a>
 
             <a
-              href=""
+              target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/hossain-mohammad-asraful-islam-masum-4b5847200"
               className="mx-2 text-gray-300 transition-colors duration-300 hover:text-blue-500"
               aria-label="Facebook"
             >
@@ -37,7 +37,7 @@ const Footer = () => {
             </a>
 
             <a
-              href=""
+              target="_blank" rel="noreferrer" href="https://github.com/AsrafulMasum"
               className="mx-2 text-gray-300 transition-colors duration-300 hover:text-blue-500"
               aria-label="Github"
             >
