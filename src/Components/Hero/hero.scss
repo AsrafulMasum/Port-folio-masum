@@ -42,7 +42,9 @@
       }
 
       .buttons {
-        button {
+        z-index: 999;
+        margin-bottom: 20px;
+        a {
           padding: 20px;
           border: 1px solid white;
           border-radius: 10px;
