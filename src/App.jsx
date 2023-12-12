@@ -1,6 +1,7 @@
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Education from "./Components/Education/Education";
+import Experience from "./Components/Experiance/Experience";
 import Footer from "./Components/Footer/Footer";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
@@ -22,6 +23,9 @@ const App = () => {
       </section>
       <section id="Education">
         <Education />
+      </section>
+      <section id="Experience">
+        <Experience />
       </section>
       <section id="Services">
         <Parallax type="services" />

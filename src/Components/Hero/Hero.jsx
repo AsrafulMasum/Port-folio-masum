@@ -4,7 +4,7 @@ import resume from "/resume.pdf"
 
 const textVariants = {
   initial: {
-    x: -500,
+    x: -200,
     opacity: 0,
   },
   animate: {

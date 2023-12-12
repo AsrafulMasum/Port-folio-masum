@@ -5,7 +5,7 @@ const Skills = () => {
   const skills = ["HTML", "CSS", "JavaScript", "React", "Firebase", "Node.js", "Express.js", "MongoDB"]
 
   return (
-    <div className="max-w-[1080px] mx-auto mt-20">
+    <div className="max-w-[1080px] mx-auto mt-10 md:mt-20">
       <h2 className="text-center text-7xl mb-10">Skills</h2>
       <div className="flex flex-wrap justify-center gap-12">
         {

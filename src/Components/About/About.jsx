@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const textVariants = {
   initial: {
-    x: 500,
+    x: 200,
     opacity: 0,
   },
   animate: {
@@ -26,7 +26,7 @@ const textVariants = {
 
 const About = () => {
   return (
-    <div className="about max-w-[1080px] h-full mx-auto flex justify-center items-center">
+    <div className="about max-w-[1080px] h-full mx-auto flex flex-col-reverse mt-20 lg:flex-row justify-center items-center">
       <div className="img-container flex-1">
         <img src="/1.png" alt="" />
       </div>

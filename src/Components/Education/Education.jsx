@@ -2,9 +2,9 @@
 
 const Education = () => {
   return (
-    <div className="max-w-[1080px] mx-auto mt-20">
+    <div className="max-w-[1080px] mx-auto md:mt-20">
       <h2 className="text-center text-7xl mb-10">Education</h2>
-      <div className="grid grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 
         <div className="flex flex-col gap-2 bg-slate-500 px-8 py-4 rounded-sm hover:scale-110 hover:bg-orange-500 duration-1000 text-white">
           <h2 className="font-bold">B.Sc in Computer Science & Engineering</h2>
