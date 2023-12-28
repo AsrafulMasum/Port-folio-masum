@@ -16,7 +16,7 @@ const Navbar = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
           >
-            Masum
+            <img className="w-10" src="/logo.png" alt="" />
           </motion.span>
           <div className="navigation">
             <div className="navItems">

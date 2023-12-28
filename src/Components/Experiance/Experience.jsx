@@ -29,7 +29,7 @@ const Experience = () => {
       variants={variants}
       initial="initial"
       whileInView="animate"
-      className="max-w-[1080px] mx-auto mt-10 md:mt-20"
+      className="max-w-[1080px] mx-auto mt-10 md:mt-20 p-4"
     >
       <motion.h2 className="text-7xl mb-10">Experience</motion.h2>
       <motion.h4 className="border-b inline-block">

@@ -121,6 +121,9 @@
             align-items: center;
             gap: 10px;
           }
+          @include mobile {
+            flex-direction: column;
+          }
         }
       }
     }

@@ -1,8 +1,6 @@
-import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Education from "./Components/Education/Education";
 import Experience from "./Components/Experiance/Experience";
-import Footer from "./Components/Footer/Footer";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Parallax from "./Components/Parallax/Parallax";
@@ -21,31 +19,28 @@ const App = () => {
       <section id="Skills">
         <Skills />
       </section>
-      <section id="Education">
+      <section id="About">
         <Education />
       </section>
       <section id="Experience">
         <Experience />
       </section>
-      <section id="Services">
+      <section className="secParallax" id="Services">
         <Parallax type="services" />
       </section>
       <section>
         <Services />
       </section>
-      <section id="Projects">
+      <section  className="secParallax" id="Projects">
         <Parallax />
       </section>
       <Projects />
-      <section id="About">
-        <About />
-      </section>
       <section id="Contact">
         <Contact />
       </section>
-      <section>
+      {/* <section>
         <Footer />
-      </section>
+      </section> */}
     </div>
   );
 };
