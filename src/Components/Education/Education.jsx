@@ -25,7 +25,7 @@ const textVariants = {
 
 const eduVariants = {
   initial: {
-    x: 100,
+    x: -100,
     opacity: 0,
   },
   animate: {
