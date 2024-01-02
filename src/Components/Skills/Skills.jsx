@@ -26,7 +26,7 @@ const textVariants = {
 
 const Skills = () => {
 
-  const skills = ["HTML", "CSS", "JavaScript", "React", "Firebase", "Node.js", "Express.js", "MongoDB"]
+  const skills = ["HTML", "CSS", "JavaScript", "React", "Firebase", "Node.js", "Express.js", "MongoDB", "Next.js"]
 
   return (
     <motion.div variants={textVariants}
