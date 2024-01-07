@@ -9,6 +9,7 @@ const items = [
     title: "Flarum",
     img: "https://i.postimg.cc/yY8dky6x/flarum.png",
     desc: "Flarum is a forum discussions website . Where users engage in discussions, share information, and connect with others around various topics. It's a place to ask questions, share opinions, and interact with a community of like-minded individuals. Users can create threads, post messages, and reply to discussions.",
+    tec: "React, Firebase, MongoDB, Mongoose, Node.js, Express.js, Stripe.js, Recharts, TanStack Query, Axios, JWT, Swiper.js, React Hook Form.",
     demo: "https://forums-6b0ca.web.app",
     code: "https://github.com/AsrafulMasum/Flarum",
   },
@@ -17,6 +18,7 @@ const items = [
     title: "E Guidance",
     img: "https://i.postimg.cc/c4kQHHWq/E-Guidance.png",
     desc: "E Guidance is a event management website with front-end only. It is a digital platform that simplifies the planning, promotion, and coordination of events. It offers tools for tasks like scheduling, ticketing, and attendee engagement, making event organization more efficient and successful for organizers and participants alike.",
+    tec: "React, Firebase, MongoDB, Node.js, Express.js, AOS, TanStack Query, Axios, JWT, Swiper.js.",
     demo: "https://e-mania.web.app",
     code: "https://github.com/AsrafulMasum/E-Guidance",
   },
@@ -25,6 +27,7 @@ const items = [
     title: "eduCare",
     img: "https://i.postimg.cc/QdWWdJS5/eduCare.png",
     desc: "eduCare is a education based website with assignments task . It is an online platform designed for students to manage coursework. It allows students to submit assignments digitally, provides tools for creating assignments, and facilitates grading and feedback. This platform streamlines the entire assignment process, making it easier for students.",
+    tec: "React, Firebase, MongoDB, Node.js, Express.js, TanStack Query, Axios, JWT, Swiper.js, React Hook Form.",
     demo: "https://educare-fe496.web.app",
     code: "https://github.com/AsrafulMasum/edu-Care",
   },
@@ -33,6 +36,7 @@ const items = [
     title: "carMart",
     img: "https://i.postimg.cc/9f6R9R8S/carMart.png",
     desc: "carMart is an e-commerce site which is an online platform dedicated to buying and selling vehicles. It serves as a marketplace where users can browse a wide range of cars, trucks, and other automobiles. The websites offer detailed listings with photos, specifications, and pricing information for various makes and models.",
+    tec: "React, Firebase, MongoDB, Node.js, Express.js, TanStack Query, Axios, JWT, Swiper.js.",
     demo: "https://car-mart-789fb.web.app",
     code: "https://github.com/AsrafulMasum/car-Mart-with-server",
   },
@@ -57,6 +61,9 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
+            <p className="font-bold">
+              <span className="underline">Technology</span> : {item.tec}
+            </p>
             <div className="btn-container">
               <a
                 className="demo"
@@ -109,4 +116,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
