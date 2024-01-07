@@ -6,7 +6,7 @@ import { GrStripe } from "react-icons/gr";
 
 const textVariants = {
   initial: {
-    x: 100,
+    x: -100,
     opacity: 0,
   },
   animate: {
@@ -95,7 +95,7 @@ const Skills = () => {
       </motion.h2>
       <motion.div
         variants={textVariants}
-        className="flex flex-col justify-center gap-12"
+        className="flex flex-col md:flex-row md:flex-wrap justify-center gap-12"
       >
         {skills.map((skill, idx) => (
           <motion.p

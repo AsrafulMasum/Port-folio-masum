@@ -29,6 +29,9 @@ a{
 }
 @mixin tablet {
   @media (max-width: 1024px) {
+    body{
+      width: 100%;
+    }
     @content;
   }
 }

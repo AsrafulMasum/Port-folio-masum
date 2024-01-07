@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const textVariants = {
   initial: {
-    x: 200,
+    x: -200,
     opacity: 0,
   },
   animate: {
@@ -25,7 +25,7 @@ const textVariants = {
 
 const eduVariants = {
   initial: {
-    x: 100,
+    x: -100,
     opacity: 0,
   },
   animate: {

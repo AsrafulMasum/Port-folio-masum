@@ -103,7 +103,7 @@
     max-width: 1080px;
     margin: auto;
 
-    @include mobile {
+    @include tablet {
       flex-direction: column;
       width: 100%;
     }

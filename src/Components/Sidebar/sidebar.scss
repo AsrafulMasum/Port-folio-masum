@@ -3,7 +3,7 @@
 .sidebar {
   display: none;
 
-  @include mobile {
+  @include tablet {
     display: flex;
     flex-direction: column;
     background-color: white;
