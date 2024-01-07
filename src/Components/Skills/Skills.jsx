@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
-import { FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
+import { IoLogoJavascript, IoLogoFirebase  } from "react-icons/io5";
+import { SiExpress, SiMongodb, SiNextdotjs, SiMongoose, SiAxios, SiJsonwebtokens,} from "react-icons/si";
+import { GrStripe } from "react-icons/gr";
 
 const textVariants = {
   initial: {
@@ -36,41 +39,48 @@ const Skills = () => {
     },
     {
       skill: "JavaScript",
-      icon: <FaCss3Alt className="text-xl" />
+      icon: <IoLogoJavascript className="text-xl" />
     },
     {
       skill: "React",
-      icon: <FaCss3Alt className="text-xl" />
+      icon: <FaReact className="text-xl" />
     },
     {
       skill: "Firebase",
-      icon: <FaCss3Alt className="text-xl" />
+      icon: <IoLogoFirebase className="text-xl" />
     },
     {
       skill: "Node.js",
-      icon: <FaCss3Alt className="text-xl" />
+      icon: <FaNodeJs className="text-xl" />
     },
     {
       skill: "Express.js",
-      icon: <FaCss3Alt className="text-xl" />
+      icon: <SiExpress className="text-xl" />
     },
     {
       skill: "MongoDB",
-      icon: <FaCss3Alt className="text-xl" />
+      icon: <SiMongodb className="text-xl" />
     },
-    // "HTML",
-    // "CSS",
-    // "JavaScript",
-    // "React",
-    // "Firebase",
-    // "Node.js",
-    // "Express.js",
-    // "MongoDB",
-    // "Next.js",
-    // "Mongoose",
-    // "Axios",
-    // "JWT",
-    // "Stripe.js"
+    {
+      skill: "Next.js",
+      icon: <SiNextdotjs className="text-xl" />
+    },
+    {
+      skill: "Mongoose",
+      icon: <SiMongoose className="text-xl" />
+    },
+    {
+      skill: "Axios",
+      icon: <SiAxios className="text-xl" />
+    },
+    {
+      skill: "JWT",
+      icon: <SiJsonwebtokens className="text-xl" />
+    },
+    {
+      skill: "Stripe.js",
+      icon: <GrStripe className="text-xl" />
+    },
   ];
 
   return (
@@ -85,13 +95,13 @@ const Skills = () => {
       </motion.h2>
       <motion.div
         variants={textVariants}
-        className="flex flex-wrap justify-center gap-12"
+        className="flex flex-col justify-center gap-12"
       >
         {skills.map((skill, idx) => (
           <motion.p
             key={idx}
             variants={textVariants}
-            className="border border-gray-600 text-white px-12 py-4 rounded-sm hover:bg-[#D3D3D3] hover:text-black group flex items-center gap-4"
+            className="border border-gray-600 text-white px-12 py-4 rounded-sm hover:bg-[#D3D3D3] hover:text-black group flex items-center justify-center gap-4"
           >
             <span>{skill?.icon}</span>
             <p className="group-hover:scale-125 duration-1000">{skill?.skill}</p>
