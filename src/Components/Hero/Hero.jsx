@@ -76,7 +76,7 @@ const Hero = () => {
         Writer Content Creator Influencer
       </motion.div>
       <div className="imageContainer">
-        <img src="/port-folio.png" alt="" />
+        <img src="https://i.postimg.cc/XvCxPGmg/port-folio-removebg-min.png" alt="" />
       </div>
     </div>
   );
