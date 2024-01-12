@@ -90,22 +90,22 @@ const Education = () => {
             <div className="flex gap-5">
               <p className="font-extralight">Year : 2017 - 2021</p>
               <p>| |</p>
-              <p className="font-extralight">CGPG : 3.00</p>
+              <p className="font-extralight">CGPA : 3.00</p>
             </div>
-            <p>Location : Dhanmondi, Dhaka, BanglaDesh</p>
+            <p>Location : Dhanmondi, Dhaka, Bangladesh</p>
             </div>
           </motion.div>
 
           <motion.div variants={eduVariants} className="flex flex-col gap-2 border border-white hover:bg-[#D3D3D3] hover:text-black px-8 py-4 rounded-sm text-white">
             <div className="hover:scale-105 duration-1000">
             <h2 className="font-bold">Higher Secondary</h2>
-            <h4 className="font-extralight">Shaheed Police smrity College</h4>
+            <h4 className="font-extralight">Shaheed Police Smrity College</h4>
             <div className="flex gap-5">
               <p className="font-extralight">Year : 2014 - 2016</p>
               <p>| |</p>
-              <p className="font-extralight">GPG : 4.75</p>
+              <p className="font-extralight">GPA : 4.75</p>
             </div>
-            <p>Location : Mirpur-14, Dhaka, BanglaDesh</p>
+            <p>Location : Mirpur-14, Dhaka, Bangladesh</p>
             </div>
           </motion.div>
 
@@ -116,9 +116,9 @@ const Education = () => {
             <div className="flex gap-5">
               <p className="font-extralight">Year : 2004 - 2014</p>
               <p>| |</p>
-              <p className="font-extralight">CGPG : 4.88</p>
+              <p className="font-extralight">GPA : 4.88</p>
             </div>
-            <p>Location : Dhaka-Cant., Dhaka, BanglaDesh</p>
+            <p>Location : Dhaka-Cant., Dhaka, Bangladesh</p>
             </div>
           </motion.div>
         </motion.div>
