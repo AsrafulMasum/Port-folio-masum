@@ -44,15 +44,37 @@
       .buttons {
         z-index: 999;
         margin-bottom: 20px;
-        a {
+        .btn {
           padding: 20px;
           border: 1px solid white;
           border-radius: 10px;
           background-color: transparent;
-          color: white;
+          color: rebeccapurple;
           margin-right: 20px;
           cursor: pointer;
           font-weight: 300;
+          position: relative;
+          display: inline-flex;
+          overflow: hidden;
+        }
+        .btn span {
+          position: relative;
+          z-index: 1;
+        }
+        .btn::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0px;
+          height: 0px;
+          border-radius: 50%;
+          background: white;
+          transition: width 0.5s, height 0.5s;
+        }
+        .btn:hover::before {
+          width: 300px;
+          height: 300px;
         }
       }
 
@@ -78,7 +100,7 @@
       bottom: 0;
     }
 
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;

@@ -1,6 +1,6 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
-import resume from "/resume.pdf"
+import resume from "/resume.pdf";
 
 const textVariants = {
   initial: {
@@ -33,7 +33,7 @@ const sliderVariants = {
     x: "-220%",
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
+      repeatType: "mirror",
       duration: 20,
     },
   },
@@ -49,15 +49,17 @@ const Hero = () => {
           initial="initial"
           whileInView="animate"
         >
-          <motion.h2 variants={textVariants}>MOHAMMAD ASRAFUL ISLAM MASUM</motion.h2>
-          <motion.h1 variants={textVariants}>
-            Web developer
-          </motion.h1>
+          <motion.h2 variants={textVariants}>
+            MOHAMMAD ASRAFUL ISLAM MASUM
+          </motion.h2>
+          <motion.h1 variants={textVariants}>Web developer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.a href={resume} download="Resume" variants={textVariants}>
-              Download Resume
+            <motion.a className="btn" href={resume} download="Resume" variants={textVariants}>
+              <span>Download Resume</span>
             </motion.a>
-            <motion.a href="#Contact" variants={textVariants}>Contact Me</motion.a>
+            <motion.a className="btn" href="#Contact" variants={textVariants}>
+              <span>Contact Me</span>
+            </motion.a>
           </motion.div>
           <motion.img
             variants={textVariants}
