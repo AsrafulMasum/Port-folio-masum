@@ -49,10 +49,10 @@
           border: 1px solid white;
           border-radius: 10px;
           background-color: transparent;
-          color: rebeccapurple;
+          color: orange;
           margin-right: 20px;
           cursor: pointer;
-          font-weight: 300;
+          font-weight: 700;
           position: relative;
           display: inline-flex;
           overflow: hidden;
@@ -62,10 +62,11 @@
           z-index: 1;
         }
         .btn::before {
-          content: "";
+          content: " ";
           position: absolute;
-          top: 0;
-          left: 0;
+          top: var(--y);
+          left: var(--x);
+          transform: translate(-50%, -50%);
           width: 0px;
           height: 0px;
           border-radius: 50%;
@@ -73,8 +74,8 @@
           transition: width 0.5s, height 0.5s;
         }
         .btn:hover::before {
-          width: 300px;
-          height: 300px;
+          width: 500px;
+          height: 500px;
         }
       }
 

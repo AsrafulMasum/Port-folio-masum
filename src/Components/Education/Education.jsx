@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
+import "./education.scss"
 
 const textVariants = {
   initial: {
@@ -47,6 +49,19 @@ const eduVariants = {
 };
 
 const Education = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    const x = e.pageX - e.currentTarget.offsetLeft;
+    const y = e.pageY - e.currentTarget.offsetTop;
+    setPosition({ x, y });
+  };
+
+  const styles = {
+    '--x': `${position.x}px`,
+    '--y': `${position.y}px`,
+  };
+
   return (
     <div className="max-w-[1080px] mx-auto mt-16 flex flex-col lg:flex-row gap-10">
       <motion.div
@@ -68,11 +83,12 @@ const Education = () => {
           projects.
         </motion.h4>
         <motion.a
-          className="p-5 border border-white rounded-[10px] text-white font-light text-center"
+          className="btn"
           href="#Contact"
           variants={textVariants}
+           onMouseMove={handleMouseMove} style={styles}
         >
-          Contact Me
+          <span>Contact Me</span>
         </motion.a>
       </motion.div>
       <motion.div initial="initial"
