@@ -93,7 +93,7 @@ const Education = () => {
       </motion.div>
       <motion.div initial="initial"
         whileInView="animate" variants={eduVariants} className="flex-1">
-        <motion.h2 className="text-center text-7xl mb-4">Education</motion.h2>
+        <motion.h2 className="text-7xl mb-4">Education</motion.h2>
         <motion.div className="space-y-4" variants={eduVariants}>
           <motion.div variants={eduVariants} className="flex flex-col gap-2 border border-white hover:bg-[#D3D3D3] hover:text-black px-8 py-4 rounded-sm text-white">
             <div className="hover:scale-105 duration-1000">

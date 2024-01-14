@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const variants = {
   initial: {
@@ -10,7 +11,7 @@ const variants = {
     opacity: 1,
     transition: {
       duration: 1,
-      staggerChildren: 0.1,
+      staggerChildren: 0.5,
     },
   },
   scrollButton: {
@@ -24,6 +25,19 @@ const variants = {
 };
 
 const Experience = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    const x = e.pageX - e.currentTarget.offsetLeft;
+    const y = e.pageY - e.currentTarget.offsetTop;
+    setPosition({ x, y });
+  };
+
+  const styles = {
+    '--x': `${position.x}px`,
+    '--y': `${position.y}px`,
+  };
+
   return (
     <motion.div
       variants={variants}
@@ -31,11 +45,13 @@ const Experience = () => {
       whileInView="animate"
       className="max-w-[1080px] mx-auto mt-10 md:mt-20 p-4"
     >
-      <motion.h2 className="text-7xl mb-10">Experience</motion.h2>
-      <motion.h4 className="border-b inline-block">
+      <motion.h2 variants={variants} className="text-7xl mb-10">
+        Professional Courses
+      </motion.h2>
+      <motion.h4 variants={variants} className="border-b inline-block">
         MERN Stack Developer | | 6 Months
       </motion.h4>
-      <motion.p className="my-10">
+      <motion.p variants={variants} className="my-10">
         I possess comprehensive proficiency in web development using MongoDB,
         Express.js, React.js, and Node.js. With expertise in both front-end and
         back-end technologies & excel in building dynamic and responsive web
@@ -48,6 +64,9 @@ const Experience = () => {
         MERN stack, thus contributing to the creation of modern, scalable, and
         feature-rich web solutions.
       </motion.p>
+      <motion.button variants={variants} onMouseMove={handleMouseMove} style={styles} className="btn">
+        <span>See Certificate</span>
+      </motion.button>
     </motion.div>
   );
 };
