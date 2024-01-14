@@ -1,5 +1,8 @@
+import { Dialog } from "@headlessui/react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { pdfjs } from "react-pdf";
+import "./experience.scss";
 
 const variants = {
   initial: {
@@ -34,8 +37,26 @@ const Experience = () => {
   };
 
   const styles = {
-    '--x': `${position.x}px`,
-    '--y': `${position.y}px`,
+    "--x": `${position.x}px`,
+    "--y": `${position.y}px`,
+  };
+
+  pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+    "pdfjs-dist/build/pdf.worker.min.js",
+    import.meta.url
+  ).toString();
+
+  // Your PDF file URL
+  // const pdfUrl = `${assignment?.pdf}`;
+
+  const [isOpenPDF, setIsOpenPDF] = useState(false);
+
+  const openPDFModal = () => {
+    setIsOpenPDF(true);
+  };
+
+  const closePDFModal = () => {
+    setIsOpenPDF(false);
   };
 
   return (
@@ -64,9 +85,59 @@ const Experience = () => {
         MERN stack, thus contributing to the creation of modern, scalable, and
         feature-rich web solutions.
       </motion.p>
-      <motion.button variants={variants} onMouseMove={handleMouseMove} style={styles} className="btn">
+      <motion.button
+        variants={variants}
+        onMouseMove={handleMouseMove}
+        style={styles}
+        className="btn"
+        onClick={openPDFModal}
+      >
         <span>See Certificate</span>
       </motion.button>
+
+      {/* pdf model */}
+      <Dialog
+        as="div"
+        className="fixed inset-0 z-50 overflow-y-auto"
+        open={isOpenPDF}
+        onClose={closePDFModal}
+      >
+        <div className="min-h-screen px-4 text-center">
+          <Dialog.Overlay className="fixed inset-0 bg-black opacity-30" />
+          <span
+            className="inline-block h-screen align-middle"
+            aria-hidden="true"
+          >
+            &#8203;
+          </span>
+          <div className="inline-block align-middle p-6 my-8 text-left bg-[#111132] shadow-xl transform transition-all sm:my-12 sm:align-middle sm:max-w-3xl sm:w-full sm:p-6">
+            <Dialog.Title
+              as="h3"
+              className="text-lg font-medium leading-6 text-white"
+            >
+              Certificate
+            </Dialog.Title>
+            <div className="mt-2">
+              <iframe
+                title="PDF Viewer"
+                src="/PHcertificate.pdf"
+                width="100%"
+                height="400px"
+              />
+            </div>
+            <div className="mt-4">
+              <button
+                onClick={closePDFModal}
+                onMouseMove={handleMouseMove}
+                style={styles}
+                className="btn"
+              >
+                <span>Close Modal</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </Dialog>
     </motion.div>
   );
 };

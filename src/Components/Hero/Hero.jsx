@@ -1,7 +1,7 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
 import resume from "/resume.pdf";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const textVariants = {
   initial: {
