@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoFirebase  } from "react-icons/io5";
-import { SiExpress, SiMongodb, SiNextdotjs, SiMongoose, SiAxios, SiJsonwebtokens,} from "react-icons/si";
+import { SiExpress, SiMongodb, SiNextdotjs, SiMongoose, SiAxios, SiJsonwebtokens, SiFramer} from "react-icons/si";
 import { GrStripe } from "react-icons/gr";
 
 const textVariants = {
@@ -81,6 +81,10 @@ const Skills = () => {
       skill: "Stripe.js",
       icon: <GrStripe className="text-xl" />
     },
+    {
+      skill: "Framer Motion",
+      icon: <SiFramer className="text-xl" />
+    },
   ];
 
   return (
@@ -104,7 +108,7 @@ const Skills = () => {
             className="border border-gray-600 text-white px-12 py-4 rounded-sm hover:bg-[#D3D3D3] hover:text-black group flex items-center justify-center gap-4"
           >
             <span>{skill?.icon}</span>
-            <p className="group-hover:scale-125 duration-1000">{skill?.skill}</p>
+            <p className="group-hover:scale-110 duration-1000">{skill?.skill}</p>
           </motion.p>
         ))}
       </motion.div>
